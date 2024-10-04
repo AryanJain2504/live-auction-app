@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_app_route">
+    <sys_ux_app_route action="INSERT_OR_UPDATE">
+        <app_config display_value="Custom Portal App Config">33645906c3a012100ca8d075e40131eb</app_config>
+        <description/>
+        <extension_point/>
+        <fields/>
+        <icon/>
+        <name>Additional Details</name>
+        <optional_parameters/>
+        <order>200</order>
+        <parent_macroponent display_value="Record Page(task)">cc7499061ea0121024affe6df315bc59</parent_macroponent>
+        <parent_macroponent_composition_element_id>tab_set_1</parent_macroponent_composition_element_id>
+        <route_type>rec_task_additional</route_type>
+        <screen_type display_value="Additional Details">007499060ea012103db2f21fea1dce53</screen_type>
+        <sys_class_name>sys_ux_app_route</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2024-09-11 08:27:02</sys_created_on>
+        <sys_id>8474990636a012102ac247883c3c5853</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Additional Details</sys_name>
+        <sys_package display_value="Live Auction" source="x_1527309_live_a_0">d12f494ac32012100ca8d075e4013126</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Live Auction">d12f494ac32012100ca8d075e4013126</sys_scope>
+        <sys_update_name>sys_ux_app_route_8474990636a012102ac247883c3c5853</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2024-09-11 08:27:02</sys_updated_on>
+    </sys_ux_app_route>
+    <sys_translated_text action="delete_multiple" query="documentkey=8474990636a012102ac247883c3c5853"/>
+</record_update>

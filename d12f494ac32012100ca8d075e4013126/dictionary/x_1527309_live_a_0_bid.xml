@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="29401982c36012100ca8d075e40131d1" label="Bid" max_length="40" name="x_1527309_live_a_0_bid" type="collection">
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" display="true" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Bid amount" max_length="38" name="bid_amount" type="decimal"/>
+        <element label="Bid item" max_length="32" name="bid_item" reference="x_1527309_live_a_0_bid_item" type="reference"/>
+        <index name="index">
+            <element name="bid_item"/>
+        </index>
+    </element>
+</database>
