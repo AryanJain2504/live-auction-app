@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_number">
+    <sys_number action="INSERT_OR_UPDATE">
+        <category display_value="" name="x_1527309_live_a_0_bid_item">x_1527309_live_a_0_bid_item</category>
+        <maximum_digits>7</maximum_digits>
+        <number>1000</number>
+        <prefix>ITM</prefix>
+        <sys_class_name>sys_number</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-11 08:05:15</sys_created_on>
+        <sys_id>f97f010ec32012100ca8d075e40131f8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ITM</sys_name>
+        <sys_package display_value="Live Auction" source="x_1527309_live_a_0">d12f494ac32012100ca8d075e4013126</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Live Auction">d12f494ac32012100ca8d075e4013126</sys_scope>
+        <sys_update_name>sys_number_f97f010ec32012100ca8d075e40131f8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-11 08:05:15</sys_updated_on>
+    </sys_number>
+</record_update>

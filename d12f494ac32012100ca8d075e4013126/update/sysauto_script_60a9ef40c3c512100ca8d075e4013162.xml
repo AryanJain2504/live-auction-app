@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <business_calendar/>
+        <condition/>
+        <conditional>false</conditional>
+        <entered_time>1970-01-01 10:00:00</entered_time>
+        <max_drift/>
+        <name>Close RITM</name>
+        <offset/>
+        <offset_type>0</offset_type>
+        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_period/>
+        <run_start>2024-09-30 10:42:23</run_start>
+        <run_time>1970-01-01 20:00:00</run_time>
+        <run_type>daily</run_type>
+        <script><![CDATA[(function() {
+    // Query for tasks where conditions match
+    var taskGr = new GlideRecord('sc_task');
+    taskGr.addQuery('request_item.requested_by.contract_employee', true); // Check if Requested By is a contract employee
+    taskGr.addQuery('request_item.variables.request_type', 'Contract termination'); // Check if Request Type is Contract termination
+    taskGr.addQuery('state', '!=', 'closed'); // Ensure the task is not already closed
+    taskGr.query();
+    
+    while (taskGr.next()) {
+        // Close the task as Cancelled
+        taskGr.state = 'closed_cancelled';
+        taskGr.update();
+
+        // Also close the associated RITM (Request Item)
+        var ritmGr = new GlideRecord('sc_req_item');
+        if (ritmGr.get(taskGr.request_item)) {
+            ritmGr.stage = 'closed_cancelled';
+            ritmGr.state = 'closed_cancelled';
+            ritmGr.update();
+        }
+    }
+})();]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-30 10:43:06</sys_created_on>
+        <sys_id>60a9ef40c3c512100ca8d075e4013162</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Close RITM</sys_name>
+        <sys_package display_value="Live Auction" source="x_1527309_live_a_0">d12f494ac32012100ca8d075e4013126</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Live Auction">d12f494ac32012100ca8d075e4013126</sys_scope>
+        <sys_update_name>sysauto_script_60a9ef40c3c512100ca8d075e4013162</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-30 10:43:06</sys_updated_on>
+        <time_zone>US/Hawaii</time_zone>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>

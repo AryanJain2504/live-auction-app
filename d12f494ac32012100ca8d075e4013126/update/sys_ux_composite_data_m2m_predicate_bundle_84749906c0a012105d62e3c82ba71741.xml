@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_composite_data_m2m_predicate_bundle">
+    <sys_ux_composite_data_m2m_predicate_bundle action="INSERT_OR_UPDATE">
+        <dataset display_value="Custom Portal Landing - Popular Articles">8074990684a0121088922dee18e7f845</dataset>
+        <order/>
+        <predicate_bundle display_value="Popular articles bundle">4c7499060ba012104379f0362497db40</predicate_bundle>
+        <sys_class_name>sys_ux_composite_data_m2m_predicate_bundle</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2024-09-11 08:27:03</sys_created_on>
+        <sys_id>84749906c0a012105d62e3c82ba71741</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Live Auction" source="x_1527309_live_a_0">d12f494ac32012100ca8d075e4013126</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Live Auction">d12f494ac32012100ca8d075e4013126</sys_scope>
+        <sys_update_name>sys_ux_composite_data_m2m_predicate_bundle_84749906c0a012105d62e3c82ba71741</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2024-09-11 08:27:03</sys_updated_on>
+    </sys_ux_composite_data_m2m_predicate_bundle>
+</record_update>

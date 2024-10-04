@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <controller_preset/>
+        <includes/>
+        <macroponent display_value="Default">fbcd1502c3e012100ca8d075e4013187</macroponent>
+        <name>button_1/disabled</name>
+        <preset/>
+        <required_translations>[
+    
+]</required_translations>
+        <script><![CDATA[/**
+  * @param {params} params
+  * @param {api} params.api
+  * @param {TransformApiHelpers} params.helpers
+  */
+function evaluateProperty({api, helpers}) {
+  var highestBidAmt = api.data.look_up_bids.results[0].bid_amount.value;
+  if(api.state.bidAmount <= highestBidAmt){
+    return true;
+  }
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-11 11:46:13</sys_created_on>
+        <sys_id>c9887946c3a812100ca8d075e401315e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>button_1/disabled</sys_name>
+        <sys_package display_value="Live Auction" source="x_1527309_live_a_0">d12f494ac32012100ca8d075e4013126</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Live Auction">d12f494ac32012100ca8d075e4013126</sys_scope>
+        <sys_update_name>sys_ux_client_script_c9887946c3a812100ca8d075e401315e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-11 11:46:13</sys_updated_on>
+        <target>macroponent</target>
+        <type>transform</type>
+    </sys_ux_client_script>
+</record_update>
